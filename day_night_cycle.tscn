@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bc3b8ju2qowd2"]
+
+[node name="dayNightCycle" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Day 1"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 49.0
+offset_right = 89.0
+offset_bottom = 23.0
+text = "00"
