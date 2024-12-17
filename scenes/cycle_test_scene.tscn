@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://vy5pt4cad6he"]
+
+[ext_resource type="PackedScene" uid="uid://bc3b8ju2qowd2" path="res://scenes/day_night_cycle.tscn" id="1_cid8u"]
+[ext_resource type="PackedScene" uid="uid://bx6uaqcllc82c" path="res://scenes/night_filter.tscn" id="2_e3n3n"]
+
+[node name="cycleTestScene" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="dayNightCycle" parent="CanvasLayer" instance=ExtResource("1_cid8u")]
+
+[node name="Label" type="Label" parent="."]
+offset_left = 285.0
+offset_top = 161.0
+offset_right = 334.0
+offset_bottom = 184.0
+text = "player"
+
+[node name="NightFilter" parent="." instance=ExtResource("2_e3n3n")]

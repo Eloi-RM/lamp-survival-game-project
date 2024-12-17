@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bx6uaqcllc82c"]
+
+[ext_resource type="Script" path="res://scenes/night_filter.gd" id="1_hnr1b"]
+
+[node name="NightFilter" type="CanvasModulate"]
+script = ExtResource("1_hnr1b")
