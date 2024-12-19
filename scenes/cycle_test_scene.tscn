@@ -17,3 +17,4 @@ offset_bottom = 184.0
 text = "player"
 
 [node name="NightFilter" parent="." instance=ExtResource("2_e3n3n")]
+unique_name_in_owner = true
