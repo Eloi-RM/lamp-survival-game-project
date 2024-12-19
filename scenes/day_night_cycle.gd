@@ -48,7 +48,6 @@ func applyNightFilter(time) :
 		light = 24 - mod
 	night_filter.color = DAY_COLOR.lerp(NIGHT_COLOR, 1 - ( light / 12.0 ) )
 
-
 var numberOfDay : int = 1 :
 	set(value) :
 		numberOfDay = value
