@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var speed = 300
+@export var speed = 150
 var screen_size
 
 func _ready():
@@ -26,12 +26,14 @@ func _process(delta):
 	position += velocity * delta
 	position = position.clamp(Vector2.ZERO, screen_size)
 	
-	if velocity.x != 0:
+	if velocity.x < 0:
 		$AnimatedSprite2D.animation = "walk-left"
-		$AnimatedSprite2D.flip_h = velocity.x > 0
-		
+	
+	if velocity.x > 0:
+		$AnimatedSprite2D.animation = "walk-right"
+	
 	if velocity.y > 0:
 		$AnimatedSprite2D.animation = "walk-down"
-		
+	
 	if velocity.y < 0:
 		$AnimatedSprite2D.animation = "walk-up"

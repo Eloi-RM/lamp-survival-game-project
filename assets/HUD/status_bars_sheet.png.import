@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0was5ejq2t0k"
-path="res://.godot/imported/LynaMove.png-c40d195f9722be96d16344e4a1b37b7e.ctex"
+uid="uid://b5wgucpxlp5sc"
+path="res://.godot/imported/status_bars_sheet.png-2d00a03c3c4e9abf1a5c343a1d5d857c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/LynaMove.png"
-dest_files=["res://.godot/imported/LynaMove.png-c40d195f9722be96d16344e4a1b37b7e.ctex"]
+source_file="res://assets/HUD/status_bars_sheet.png"
+dest_files=["res://.godot/imported/status_bars_sheet.png-2d00a03c3c4e9abf1a5c343a1d5d857c.ctex"]
 
 [params]
 

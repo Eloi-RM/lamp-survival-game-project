@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://vy5pt4cad6he"]
+[gd_scene load_steps=9 format=3 uid="uid://vy5pt4cad6he"]
 
 [ext_resource type="PackedScene" uid="uid://bc3b8ju2qowd2" path="res://scenes/day_night_cycle.tscn" id="1_cid8u"]
 [ext_resource type="Texture2D" uid="uid://b32uqjqqej6jm" path="res://assets/grass.png" id="1_g6vlc"]
@@ -6,7 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://b4b2udcytcvkk" path="res://assets/sprites/cactus.png" id="4_ba21p"]
 [ext_resource type="Texture2D" uid="uid://7pjk3vvdvycu" path="res://assets/sprites/rock.png" id="5_2qgnj"]
 [ext_resource type="Texture2D" uid="uid://do8kwqs55f3fb" path="res://assets/sprites/shroom.png" id="6_txi4c"]
-[ext_resource type="Texture2D" uid="uid://dixifktt0w80r" path="res://assets/sprites/myGuy.png" id="7_77di0"]
 [ext_resource type="Texture2D" uid="uid://brh4flw4xuyud" path="res://assets/sprites/flowers.png" id="8_u3an4"]
 [ext_resource type="Texture2D" uid="uid://dmg04v13yqvi" path="res://assets/sprites/lily_pad.png" id="9_4jir0"]
 
@@ -39,10 +38,6 @@ texture = ExtResource("5_2qgnj")
 [node name="Shroom" type="Sprite2D" parent="."]
 position = Vector2(83, 274)
 texture = ExtResource("6_txi4c")
-
-[node name="MyGuy" type="Sprite2D" parent="."]
-position = Vector2(294, 147)
-texture = ExtResource("7_77di0")
 
 [node name="Flowers" type="Sprite2D" parent="."]
 position = Vector2(89, 78)
