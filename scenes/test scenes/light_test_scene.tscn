@@ -1,0 +1,54 @@
+[gd_scene load_steps=11 format=3 uid="uid://bctis6mj8xtl7"]
+
+[ext_resource type="PackedScene" uid="uid://bx6uaqcllc82c" path="res://scenes/night_filter.tscn" id="1_s4wkk"]
+[ext_resource type="Texture2D" uid="uid://b32uqjqqej6jm" path="res://assets/grass.png" id="2_wk1x2"]
+[ext_resource type="PackedScene" uid="uid://bc3b8ju2qowd2" path="res://scenes/day_night_cycle.tscn" id="3_7h5e0"]
+[ext_resource type="Texture2D" uid="uid://b5wgucpxlp5sc" path="res://assets/HUD/status_bars_sheet.png" id="4_5wg78"]
+[ext_resource type="Texture2D" uid="uid://do8kwqs55f3fb" path="res://assets/sprites/shroom.png" id="5_vehth"]
+[ext_resource type="Texture2D" uid="uid://brh4flw4xuyud" path="res://assets/sprites/flowers.png" id="6_hjp6q"]
+[ext_resource type="Texture2D" uid="uid://dmg04v13yqvi" path="res://assets/sprites/lily_pad.png" id="7_i5bng"]
+[ext_resource type="PackedScene" uid="uid://rekoxbfb34mk" path="res://scenes/obstacle_cactus.tscn" id="8_myvl7"]
+[ext_resource type="PackedScene" uid="uid://5exr38cqq14j" path="res://scenes/obstacle_rock.tscn" id="9_bk1my"]
+[ext_resource type="PackedScene" uid="uid://elmgto1u4qb5" path="res://scenes/player.tscn" id="10_1d2q8"]
+
+[node name="mergeTestScene" type="Node2D"]
+
+[node name="NightFilter" parent="." instance=ExtResource("1_s4wkk")]
+unique_name_in_owner = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_repeat = 2
+texture = ExtResource("2_wk1x2")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 480, 270)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="dayNightCycle" parent="CanvasLayer" instance=ExtResource("3_7h5e0")]
+
+[node name="StatusBarsSheet" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(105, 257)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("4_5wg78")
+
+[node name="Shroom" type="Sprite2D" parent="."]
+position = Vector2(106, 198)
+texture = ExtResource("5_vehth")
+
+[node name="Flowers" type="Sprite2D" parent="."]
+position = Vector2(104, 83)
+texture = ExtResource("6_hjp6q")
+
+[node name="LilyPad" type="Sprite2D" parent="."]
+position = Vector2(106, 145)
+texture = ExtResource("7_i5bng")
+
+[node name="obstacleCactus" parent="." instance=ExtResource("8_myvl7")]
+position = Vector2(311, 200)
+
+[node name="obstacleRock" parent="." instance=ExtResource("9_bk1my")]
+position = Vector2(320, 94)
+
+[node name="player" parent="." instance=ExtResource("10_1d2q8")]
+position = Vector2(234, 145)
