@@ -1,9 +1,12 @@
-[gd_scene load_steps=3 format=3 uid="uid://rekoxbfb34mk"]
+[gd_scene load_steps=4 format=3 uid="uid://rekoxbfb34mk"]
 
 [ext_resource type="Texture2D" uid="uid://b4b2udcytcvkk" path="res://assets/sprites/cactus.png" id="1_apks3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tl1ci"]
 size = Vector2(16, 22)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_tivna"]
+polygon = PackedVector2Array(-7, -11, 7, -11, 7, 11, -7, 11)
 
 [node name="obstacleCactus" type="StaticBody2D"]
 
@@ -13,3 +16,6 @@ texture = ExtResource("1_apks3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_tl1ci")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="."]
+occluder = SubResource("OccluderPolygon2D_tivna")

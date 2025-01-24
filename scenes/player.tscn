@@ -159,5 +159,6 @@ shape = SubResource("CapsuleShape2D_f6jag")
 [node name="PointLight2D" type="PointLight2D" parent="."]
 color = Color(0.964844, 0.815265, 0.00753784, 1)
 energy = 0.3
+shadow_enabled = true
 texture = ExtResource("3_tiwi1")
-texture_scale = 0.2
+texture_scale = 0.5
